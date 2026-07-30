@@ -30,7 +30,7 @@ return {
 		})
 
 		require("mason-lspconfig").setup({
-			ensure_installed = { "lua_ls", "rust_analyzer", "pylsp", "zls" },
+			ensure_installed = { "lua_ls", "rust_analyzer", "pylsp", "zls", "clangd" },
 			automatic_enable = true,
 		})
 	end,
