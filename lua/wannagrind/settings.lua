@@ -9,3 +9,5 @@ o.termguicolors = true
 o.showcmd = true
 o.shiftwidth = 4
 o.tabstop = 4
+
+vim.diagnostic.config({ virtual_text = true, underline = false })

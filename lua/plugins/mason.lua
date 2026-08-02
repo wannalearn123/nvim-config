@@ -9,13 +9,14 @@ return {
 		
 		require("mason-lspconfig").setup({
 			automatic_installation = true,
+			automatic_enable = true,
 			ensure_installed = {
 				-- "cssls", 
 				-- "bashls",
 				"lua_ls",
 				-- "vimls",
 				-- "dockerls",
-				"docker_language_server",
+"docker_language_server",
 				"clangd",
 				"rust_analyzer",
 				"zls",
