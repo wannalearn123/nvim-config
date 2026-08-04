@@ -1,4 +1,4 @@
-return { 
+return {
 	'mason-org/mason.nvim',
 	dependencies = {
 		"mason-org/mason-lspconfig.nvim",
@@ -6,17 +6,17 @@ return {
 	},
 	config = function()
 		require("mason").setup()
-		
+
 		require("mason-lspconfig").setup({
 			automatic_installation = true,
 			automatic_enable = true,
 			ensure_installed = {
-				-- "cssls", 
+				-- "cssls",
 				-- "bashls",
 				"lua_ls",
 				-- "vimls",
 				-- "dockerls",
-"docker_language_server",
+				"docker_language_server",
 				"clangd",
 				"rust_analyzer",
 				"zls",
@@ -31,12 +31,10 @@ return {
 		})
 
 		require("mason-tool-installer").setup({
-			ensure_installed  = {
+			ensure_installed = {
 				-- "prettier",
 				"black",
 			},
 		})
-
-				
 	end,
 }

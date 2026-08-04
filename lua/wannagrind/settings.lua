@@ -7,6 +7,7 @@ o.syntax = "on"
 o.autoindent = true
 o.termguicolors = true
 o.showcmd = true
+o.clipboard = "unnamedplus"
 o.shiftwidth = 4
 o.tabstop = 4
 
